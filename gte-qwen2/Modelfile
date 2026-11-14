@@ -1,0 +1,3 @@
+FROM ./.cache/gte-qwen2-1.5b-f16-fixed.gguf
+# Required for embedding models
+PARAMETER num_ctx 8192

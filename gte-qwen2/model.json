@@ -1,0 +1,6 @@
+{
+  "name": "miti99/gte-qwen2",
+  "tags": ["latest"],
+  "upstream": "Alibaba-NLP/gte-Qwen2-1.5B-instruct",
+  "description": "Alibaba's gte-Qwen2-1.5B-instruct embedding model as F16 GGUF for Ollama"
+}
