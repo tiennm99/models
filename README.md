@@ -14,6 +14,13 @@ Requirements: `git`, `jq`, [uv](https://docs.astral.sh/uv/) and a running
 [Ollama](https://ollama.com/download). Downloads and build output go to each
 model folder's gitignored `.cache/`.
 
+## Where to build
+
+Builds are heavy: they download several GB of weights and need a machine with a
+strong enough GPU. Run them by hand on such a machine only. Do not build in
+CI/CD or on a lightweight or shared machine, and do not add a workflow that
+does.
+
 ## Model index
 
 | Model | Tags | Upstream | Notes |

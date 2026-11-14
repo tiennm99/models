@@ -4,6 +4,8 @@ Alibaba's [gte-Qwen2-1.5B-instruct](https://huggingface.co/Alibaba-NLP/gte-Qwen2
 text embedding model, converted to F16 GGUF for Ollama as
 [`miti99/gte-qwen2`](https://ollama.com/miti99/gte-qwen2).
 
+Published model: https://ollama.com/miti99/gte-qwen2
+
 ## Use
 
 ```sh
@@ -27,8 +29,9 @@ Steps, all in [`build.sh`](build.sh):
 4. Create the model from the [`Modelfile`](Modelfile), which sets
    `num_ctx` to 8192.
 
-The conversion installs PyTorch (CPU build) into a temporary uv environment and
-downloads several GB of weights.
+The conversion installs PyTorch into a temporary uv environment and downloads
+several GB of weights. Build only on a machine with a strong enough GPU, never
+in CI/CD; see [Where to build](../README.md#where-to-build).
 
 ## License
 
